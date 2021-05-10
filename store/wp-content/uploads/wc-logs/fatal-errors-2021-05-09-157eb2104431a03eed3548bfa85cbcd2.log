@@ -1,0 +1,20 @@
+2021-05-09T23:24:22+00:00 CRITICAL Uncaught WooCommerce\PayPalCommerce\ApiClient\Exception\PayPalApiException: [INVALID_REQUEST] Request is not well-formed, syntactically incorrect, or violates schema. in C:\xampp\htdocs\store\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-api-client\src\Endpoint\class-partnerreferrals.php:112
+Stack trace:
+#0 C:\xampp\htdocs\store\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\Render\class-onboardingrenderer.php(66): WooCommerce\PayPalCommerce\ApiClient\Endpoint\PartnerReferrals->signup_link()
+#1 C:\xampp\htdocs\store\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\class-onboarding-rest-controller.php(311): WooCommerce\PayPalCommerce\Onboarding\Render\OnboardingRenderer->get_signup_link(true)
+#2 C:\xampp\htdocs\store\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\class-onboarding-rest-controller.php(124): WooCommerce\PayPalCommerce\Onboarding\Onboarding_REST_Controller->generate_signup_link('production', Array)
+#3 C:\xampp\htdocs\store\wp-includes\rest-api\class-wp-rest-server.php(1139): WooCommerce\PayPalCommerce\Onboarding\Onboarding_REST_Controller->get_params(Object(WP_REST_Request))
+#4 C:\xampp\htdocs\store\wp-includes\rest-api\class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-paypal/v1/o...', Array, NULL)
+#5 C:\xampp\htdocs\store\wp-includes\rest-api\class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#6 C:\xampp\htdocs\store\wp-includes\rest-api.php(354): WP_REST_Server->serve_request('/wc-paypal/v1/o...')
+#7 C:\xampp\htdocs\store\wp-includes\class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#8 C:\xampp\htdocs\store\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\store\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\store\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#11 C:\xampp\htdocs\store\wp-includes\class-wp.php(750): WP->parse_request('')
+#12 C:\xampp\htdocs\store\wp-includes\functions.php(1291): WP->main('')
+#13 C:\xampp\htdocs\store\wp-blog-header.php(16): wp()
+#14 C:\xampp\htdocs\store\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\store\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-api-client\src\Endpoint\class-partnerreferrals.php on line 112
+
